@@ -1,0 +1,8 @@
+{% extends '_layouts/site' %}
+{% set title = 'Cookie policy' %}
+
+{% block content %}
+    <h1>Cookie policy</h1>
+    {# Written as an editor would type it into a rich text field: Cookie Connect swaps the tokens. #}
+    {{ '<p>Here are the cookies this site uses, kept up to date by our consent platform.</p><p>{cookie_declaration}</p><p>You can change your mind at any time: {cookie_settings}.</p>'|raw }}
+{% endblock %}

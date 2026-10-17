@@ -1,0 +1,31 @@
+{% extends '_layouts/site' %}
+
+{% block content %}
+    <h1>Dog-ear Books</h1>
+    <p>A made-up bookshop for trying Cookie Connect. Choose a consent platform in the control panel (Cookie Connect), then come back here.</p>
+
+    <h2>From the shop floor</h2>
+    {# A video that sets marketing cookies, held back until they're allowed. #}
+    {% consent 'marketing' with { placeholder: true } %}
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="A short film" allowfullscreen></iframe>
+    {% endconsent %}
+
+    {# An analytics script, run only once analytics is allowed. #}
+    {% consent 'analytics' %}
+        <script>window.demoAnalytics = (window.demoAnalytics || 0) + 1; console.log('Analytics ran');</script>
+    {% endconsent %}
+
+    <h2>What Cookie Connect knows</h2>
+    <pre id="consent-state">Waiting for the consent platform…</pre>
+    <script>
+        CookieConnect.on('change', function (state) {
+            document.getElementById('consent-state').textContent = JSON.stringify(state, null, 2)
+                + '\n\nThe analytics script has run ' + (window.demoAnalytics || 0) + ' time(s).';
+        });
+    </script>
+
+    <h2>Books</h2>
+    <ul>{% for book in craft.entries.section('books').orderBy('title').all() %}<li><a href="{{ book.url }}">{{ book.title }}</a></li>{% endfor %}</ul>
+    <h2>Journal</h2>
+    <ul>{% for post in craft.entries.section('journal').all() %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>
+{% endblock %}

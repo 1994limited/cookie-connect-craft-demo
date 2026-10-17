@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ currentSite.language }}">
+<head>
+    {# Nothing here for Cookie Connect: it puts itself straight after <head>. #}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title ?? entry.title ?? siteName }}</title>
+    <style>
+        body { max-width: 760px; margin: 40px auto; padding: 0 20px; font: 17px/1.5 Georgia, serif; color: #1f1a14; background: #f6f1e7; }
+        a, .cookie-connect-settings { color: #7a2e3a; }
+        .cookie-connect-settings { font: inherit; background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+        .cookie-connect-placeholder { background: #ece3d3; padding: 20px; border-radius: 6px; font: 15px/1.4 system-ui, sans-serif; }
+        .cookie-connect-placeholder p { margin: 0 0 8px; }
+        nav a { margin-right: 14px; }
+        footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #d8cfbf; font: 14px/1.4 system-ui, sans-serif; display: flex; gap: 16px; flex-wrap: wrap; }
+        #consent-state { font: 13px/1.4 ui-monospace, monospace; background: #fff; border: 1px solid #d8cfbf; padding: 12px; border-radius: 6px; white-space: pre-wrap; }
+        ul { padding-left: 1.2em; }
+    </style>
+</head>
+<body>
+    <nav><a href="{{ siteUrl }}"><strong>Dog-ear Books</strong></a><a href="{{ siteUrl('cookies') }}">Cookie policy</a></nav>
+    {% block content %}{% endblock %}
+    <footer>
+        <span>© {{ now|date('Y') }} Dog-ear Books</span>
+        {# The no-code way: any link that ends in #cookie-settings opens the preferences. #}
+        <a href="#cookie-settings">Cookie settings</a>
+    </footer>
+</body>
+</html>
