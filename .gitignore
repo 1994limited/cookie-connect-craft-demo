@@ -8,3 +8,4 @@
 /web/cpresources
 /.demo-login
 /node_modules
+/web/uploads/**/_*/
