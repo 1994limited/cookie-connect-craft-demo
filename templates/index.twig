@@ -24,8 +24,19 @@
         });
     </script>
 
-    <h2>Books</h2>
-    <ul>{% for book in craft.entries.section('books').orderBy('title').all() %}<li><a href="{{ book.url }}">{{ book.title }}</a></li>{% endfor %}</ul>
-    <h2>Journal</h2>
-    <ul>{% for post in craft.entries.section('journal').all() %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>
+    <h2>New in</h2>
+    <div class="grid">
+        {% for book in craft.entries.section('books').orderBy('title').limit(8).all() %}
+            {% set cover = book.coverImage.one() %}
+            <a href="{{ book.url }}">
+                {% if cover %}<img src="{{ cover.getUrl({ width: 360 }) }}" alt="" width="180">{% endif %}
+                <p>{{ book.title }}</p>
+            </a>
+        {% endfor %}
+    </div>
+
+    <h2>From the journal</h2>
+    {% for post in craft.entries.section('journal').limit(4).all() %}
+        <p><a href="{{ post.url }}">{{ post.title }}</a> · {{ post.postDate|date('j F Y') }}</p>
+    {% endfor %}
 {% endblock %}

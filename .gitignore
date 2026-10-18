@@ -7,3 +7,4 @@
 !/storage/.gitkeep
 /web/cpresources
 /.demo-login
+/node_modules

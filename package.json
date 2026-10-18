@@ -1,0 +1,15 @@
+{
+  "name": "cookie-connect-craft-demo",
+  "version": "1.0.0",
+  "description": "A made-up independent bookshop for trying [Cookie Connect for Craft](https://github.com/1994limited/cookie-connect-craft): twelve books and a journal, with",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^24.43.1"
+  }
+}
