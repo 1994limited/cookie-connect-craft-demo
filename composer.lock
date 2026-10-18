@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3405af2cbf4341e7f78f4e4652da0366",
+    "content-hash": "373b7205be2d11b688a4ca8a30593c6f",
     "packages": [
         {
             "name": "1994/cookie-connect-core",
-            "version": "dev-main",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1994limited/cookie-connect-core.git",
+                "reference": "cf1f080cf115b47d311c45f3e1d8d8c187e23e2f"
+            },
             "dist": {
-                "type": "path",
-                "url": "../cookie-connect-core",
-                "reference": "623dc8673c64ff0c03f7dc3a594b552d90f7d7a7"
+                "type": "zip",
+                "url": "https://api.github.com/repos/1994limited/cookie-connect-core/zipball/cf1f080cf115b47d311c45f3e1d8d8c187e23e2f",
+                "reference": "cf1f080cf115b47d311c45f3e1d8d8c187e23e2f",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -36,25 +42,7 @@
                     "NineteenNinetyFour\\CookieConnect\\Core\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "NineteenNinetyFour\\CookieConnect\\Core\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit"
-                ],
-                "lint": [
-                    "pint --test"
-                ],
-                "analyse": [
-                    "phpstan analyse --memory-limit=1G"
-                ],
-                "boundaries": [
-                    "php bin/check-boundaries"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -80,17 +68,21 @@
                 "issues": "https://github.com/1994limited/cookie-connect-core/issues",
                 "source": "https://github.com/1994limited/cookie-connect-core"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-18T00:24:59+00:00"
         },
         {
             "name": "1994/cookie-connect-craft",
-            "version": "dev-main",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/1994limited/cookie-connect-craft.git",
+                "reference": "51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62"
+            },
             "dist": {
-                "type": "path",
-                "url": "../cookie-connect-craft",
-                "reference": "4dda75e43fa8d32efd69a90ee57d1f41dbdbf0b7"
+                "type": "zip",
+                "url": "https://api.github.com/repos/1994limited/cookie-connect-craft/zipball/51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62",
+                "reference": "51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62",
+                "shasum": ""
             },
             "require": {
                 "1994/cookie-connect-core": "^1.0",
@@ -108,29 +100,20 @@
             },
             "type": "craft-plugin",
             "extra": {
-                "handle": "cookie-connect",
                 "name": "Cookie Connect",
-                "developer": "1994",
-                "developerUrl": "https://1994.co.uk",
-                "documentationUrl": "https://github.com/1994limited/cookie-connect-craft/blob/main/docs/README.md",
                 "class": "nineteenninetyfour\\cookieconnect\\Plugin",
-                "changelogUrl": "https://raw.githubusercontent.com/1994limited/cookie-connect-craft/main/CHANGELOG.md"
+                "handle": "cookie-connect",
+                "developer": "1994",
+                "changelogUrl": "https://raw.githubusercontent.com/1994limited/cookie-connect-craft/main/CHANGELOG.md",
+                "developerUrl": "https://1994.co.uk",
+                "documentationUrl": "https://github.com/1994limited/cookie-connect-craft/blob/main/docs/README.md"
             },
             "autoload": {
                 "psr-4": {
                     "nineteenninetyfour\\cookieconnect\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "nineteenninetyfour\\cookieconnect\\tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "codecept run"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -143,11 +126,11 @@
             ],
             "description": "Connects Craft CMS to the cookie consent platform you already use (Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script or any other): paste its ID in the control panel, get Google Consent Mode v2 in the right order, and mark scripts that need consent the same way whichever platform is behind it.",
             "keywords": [
+                "Craft",
                 "cms",
                 "consent mode",
                 "cookie consent",
                 "cookiebot",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "gdpr",
@@ -155,14 +138,12 @@
                 "usercentrics"
             ],
             "support": {
-                "email": "hello@1994.co.uk",
                 "docs": "https://github.com/1994limited/cookie-connect-craft/blob/main/docs/README.md",
+                "email": "hello@1994.co.uk",
                 "issues": "https://github.com/1994limited/cookie-connect-craft/issues",
                 "source": "https://github.com/1994limited/cookie-connect-craft"
             },
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2026-10-18T00:34:49+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1804,16 +1785,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.13.1",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "95e7828100de18b4e269fb1703be530082d5166d"
+                "reference": "adee536f95101929f262b8c59e8a61472f347d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/95e7828100de18b4e269fb1703be530082d5166d",
-                "reference": "95e7828100de18b4e269fb1703be530082d5166d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/adee536f95101929f262b8c59e8a61472f347d58",
+                "reference": "adee536f95101929f262b8c59e8a61472f347d58",
                 "shasum": ""
             },
             "require": {
@@ -1903,7 +1884,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.13.2"
             },
             "funding": [
                 {
@@ -1919,7 +1900,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-24T09:13:11+00:00"
+            "time": "2026-10-17T23:49:46+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -8935,10 +8916,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "1994/cookie-connect-core": 20,
-        "1994/cookie-connect-craft": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},

@@ -2,8 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "1994/cookie-connect-core": "@dev",
-    "1994/cookie-connect-craft": "@dev",
+    "1994/cookie-connect-craft": "^1.0",
     "craftcms/cms": "^5.9.0",
     "vlucas/phpdotenv": "^5.4.0"
   },
@@ -26,10 +25,6 @@
   },
   "name": "1994/cookie-connect-craft-demo",
   "description": "Dog-ear Books: a demo site for Cookie Connect for Craft.",
-  "repositories": [
-    {"type": "path", "url": "../cookie-connect-craft"},
-    {"type": "path", "url": "../cookie-connect-core"}
-  ],
   "license": "proprietary",
   "autoload": {
     "psr-4": {
