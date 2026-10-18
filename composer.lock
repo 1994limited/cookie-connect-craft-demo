@@ -72,16 +72,16 @@
         },
         {
             "name": "1994/cookie-connect-craft",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1994limited/cookie-connect-craft.git",
-                "reference": "51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62"
+                "reference": "1f531d818da4d2baddb33f879140b980b0a7fb35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1994limited/cookie-connect-craft/zipball/51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62",
-                "reference": "51e6fd35b8f4bb1ac3589ea4dcf248acd55afb62",
+                "url": "https://api.github.com/repos/1994limited/cookie-connect-craft/zipball/1f531d818da4d2baddb33f879140b980b0a7fb35",
+                "reference": "1f531d818da4d2baddb33f879140b980b0a7fb35",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                     "homepage": "https://1994.co.uk"
                 }
             ],
-            "description": "Connects Craft CMS to the cookie consent platform you already use (Cookiebot, Usercentrics, OneTrust, CookieYes, iubenda, Termly, CookieFirst, Cookie-Script or any other): paste its ID in the control panel, get Google Consent Mode v2 in the right order, and mark scripts that need consent the same way whichever platform is behind it.",
+            "description": "Connect your site to the cookie consent platform you already use: paste its ID, and get Google Consent Mode v2 in the right order.",
             "keywords": [
                 "Craft",
                 "cms",
@@ -143,7 +143,7 @@
                 "issues": "https://github.com/1994limited/cookie-connect-craft/issues",
                 "source": "https://github.com/1994limited/cookie-connect-craft"
             },
-            "time": "2026-10-18T00:34:49+00:00"
+            "time": "2026-10-18T00:52:18+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
